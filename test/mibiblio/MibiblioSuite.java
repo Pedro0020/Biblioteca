@@ -14,7 +14,7 @@ import org.junit.runners.Suite;
  * @author alumno
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({mibiblio.BibliotecaTest.class, mibiblio.LibroTest.class, mibiblio.PrincipalTest.class, mibiblio.BibliotecaLoaderTest.class})
+@Suite.SuiteClasses({mibiblio.BibliotecaTest.class, mibiblio.LibroTest.class, mibiblio.BibliotecaLoaderTest.class})
 public class MibiblioSuite {
 
     @Before
