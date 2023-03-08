@@ -18,15 +18,14 @@ import static org.junit.Assert.*;
  * @see Libro
  */
 public class LibroTest {
-    
-        private List<Autor> autores;
+
+    private List<Autor> autores;
     private Libro libro;
 
-    
     public LibroTest() {
     }
-    
-  @Before
+
+    @Before
     public void setUp() {
         autores = new ArrayList();
         libro = new Libro("sdasdasdas", "Espronceda", autores, LocalDate.now(), "Galaxia");
@@ -40,7 +39,6 @@ public class LibroTest {
         autores = null;
     }
 
-
     @Test
     public void testEsDeAutor() throws Exception {
         Autor autor = new Autor("Pedro", "Ogando");
@@ -49,5 +47,4 @@ public class LibroTest {
         assertFalse(libro.esDeAutor(autor));
     }
 
-    
 }

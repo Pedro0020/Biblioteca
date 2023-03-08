@@ -78,4 +78,12 @@ public class BibliotecaTest {
         assertEquals(1, b.getLibrosPorTitulo("Espronceda").size());
     }
 
+    @Test
+    public void testGetAutores() {
+    }
+
+    @Test
+    public void testToString() {
+    }
+
 }
