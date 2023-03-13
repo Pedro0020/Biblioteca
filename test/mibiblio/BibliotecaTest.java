@@ -43,47 +43,39 @@ public class BibliotecaTest {
 
     @Test
     public void testAddLibro() {
-        assertTrue(b.addLibro(new Libro("sdasdasdas", "Espronceda", autores, LocalDate.now(), "Galaxia")));
+        assertTrue(b.addLibro(new Libro("670-900-986-099", "Espronceda", autores, LocalDate.now(), "Galaxia")));
         assertEquals(1, b.getNumLibros());
     }
 
     @Test
     public void testGetNumLibros() {
-        b.addLibro(new Libro("sdasdasdas", "Espronceda", autores, LocalDate.now(), "Galaxia"));
+        b.addLibro(new Libro("670-900-986-099", "Espronceda", autores, LocalDate.now(), "Galaxia"));
         assertEquals(1, b.getNumLibros());
-        b.addLibro(new Libro("sdasdasdas", "Espronceda", autores, LocalDate.now(), "Galaxia"));
+        b.addLibro(new Libro("670-900-986-099", "Espronceda", autores, LocalDate.now(), "Galaxia"));
         assertEquals(2, b.getNumLibros());
 
     }
 
     @Test
     public void testGetNumTitulos() {
-        b.addLibro(new Libro("sdasdasdas", "Espronceda", autores, LocalDate.now(), "Galaxia"));
+        b.addLibro(new Libro("670-900-986-099", "Espronceda", autores, LocalDate.now(), "Galaxia"));
         assertEquals(1, b.getNumLibros());
     }
 
     @Test
     public void testGetLibrosPorAutor() throws Exception {
         Autor a = new Autor("Pedro", "Ogando");
-        b.addLibro(new Libro("sdasdasdas", "Espronceda", autores, LocalDate.now(), "Galaxia"));
-        b.addLibro(new Libro("sdas", "onceda", autores, LocalDate.now(), "Galaxia"));
+        b.addLibro(new Libro("670-900-986-099", "Espronceda", autores, LocalDate.now(), "Galaxia"));
+        b.addLibro(new Libro("670-900-986-99", "onceda", autores, LocalDate.now(), "Galaxia"));
         assertEquals(2, b.getLibrosPorAutor(a).size());
     }
 
     @Test
     public void testGetLibrosPorTitulo() {
         Autor a = new Autor("Pedro", "Ogando");
-        b.addLibro(new Libro("sdasdasdas", "Espronceda", autores, LocalDate.now(), "Galaxia"));
-        b.addLibro(new Libro("sdas", "onceda", autores, LocalDate.now(), "Galaxia"));
+        b.addLibro(new Libro("670-900-986-099", "Espronceda", autores, LocalDate.now(), "Galaxia"));
+        b.addLibro(new Libro("670-900-986-599", "onceda", autores, LocalDate.now(), "Galaxia"));
         assertEquals(1, b.getLibrosPorTitulo("Espronceda").size());
-    }
-
-    @Test
-    public void testGetAutores() {
-    }
-
-    @Test
-    public void testToString() {
     }
 
 }
