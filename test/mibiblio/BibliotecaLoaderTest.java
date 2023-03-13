@@ -37,7 +37,7 @@ public class BibliotecaLoaderTest {
         if (System.getProperty("os.name").equals("Windows")) {
             assertEquals(143, BibliotecaLoader.getWindowsBaseLibros().size());
         } else {
-            System.err.println("La prueba testGetWindowsBaseLibros() solo se ejecuta con un sistema Windows. Ahora mismo esta usando " + System.getProperty("os.name"));
+            System.err.println("La prueba testGetWindowsBaseLibros()\nsolo se ejecuta con un sistema Windows.\nAhora mismo esta usando " + System.getProperty("os.name")+"\n");
         }
     }
 
@@ -46,7 +46,7 @@ public class BibliotecaLoaderTest {
         if (System.getProperty("os.name").equals("Linux")) {
             assertEquals(143, BibliotecaLoader.getLinuxBaseLibros().size());
         } else {
-            System.err.println("La prueba testGetLinuxBaseLibros() solo se ejecuta con un sistema Linux. Ahora mismo esta usando " + System.getProperty("os.name"));
+            System.err.println("La prueba testGetLinuxBaseLibros()\nsolo se ejecuta con un sistema Linux.\nAhora mismo esta usando " + System.getProperty("os.name")+"\n");
         }
     }
 
@@ -55,7 +55,7 @@ public class BibliotecaLoaderTest {
         if (System.getProperty("os.name").equals("Windows")) {
             assertTrue(BibliotecaLoader.getWindowsUsersAsAutores().contains(new Autor(System.getProperty("user.name"), "Usuario-windows")));
         } else {
-            System.err.println("La prueba testGetWindowsUsersAsAutores() solo se ejecuta con un sistema Windows. Ahora mismo esta usando " + System.getProperty("os.name"));
+            System.err.println("La prueba testGetWindowsUsersAsAutores()\nsolo se ejecuta con un sistema Windows.\nAhora mismo esta usando " + System.getProperty("os.name")+"\n");
         }
     }
 
@@ -65,7 +65,7 @@ public class BibliotecaLoaderTest {
             assertTrue(BibliotecaLoader.getLinuxUsersAsAutores().contains(new Autor(System.getProperty("user.name"), "Usuario-linux")));
             assertFalse(BibliotecaLoader.getLinuxUsersAsAutores().contains(new Autor(System.getProperty("user.name"), "Usurio-linux")));
         } else {
-            System.err.println("La prueba testGetLinuxUsersAsAutores() solo se ejecuta con un sistema Linux. Ahora mismo esta usando " + System.getProperty("os.name"));
+            System.err.println("La prueba testGetLinuxUsersAsAutores()\nsolo se ejecuta con un sistema Linux.\nAhora mismo esta usando " + System.getProperty("os.name")+"\n");
 
         }
 
