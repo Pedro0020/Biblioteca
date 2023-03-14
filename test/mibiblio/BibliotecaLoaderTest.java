@@ -33,6 +33,7 @@ public class BibliotecaLoaderTest {
     }
 
     @Test
+    //asuntions
     public void testGetWindowsBaseLibros() {
         if (System.getProperty("os.name").equals("Windows")) {
             assertEquals(143, BibliotecaLoader.getWindowsBaseLibros().size());
