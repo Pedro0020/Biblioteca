@@ -76,6 +76,8 @@ public class BibliotecaTest {
         b.addLibro(new Libro("670-900-986-099", "Espronceda", autores, LocalDate.now(), "Galaxia"));
         b.addLibro(new Libro("670-900-986-599", "onceda", autores, LocalDate.now(), "Galaxia"));
         assertEquals(1, b.getLibrosPorTitulo("Espronceda").size());
+        assertTrue(b.getLibrosPorTitulo("Espronceda").contains(new Libro("670-900-986-099", "Esonceda", autores, LocalDate.now(), "Galaxia")));
+        
     }
 
 }
